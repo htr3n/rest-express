@@ -2,29 +2,24 @@
   "root": true,
   "env": {
     "commonjs": true,
-    "es2021": true,
+    "es2022": true,
     "node": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": 2022,
+    "sourceType": "module",
     "tsconfigRootDir": ".",
-    "project": [
-      "./tsconfig.json"
-    ]
+    "project": ["./tsconfig.json"]
   },
-  "plugins": [
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "prettier/prettier": 2
+    "no-console": "error",
+    "prettier/prettier": "error"
   }
 }
-

@@ -1,6 +1,6 @@
 import express, { Application } from 'express';
 
-import routes from './routes';
+import userRoutes from './routes/user-routes';
 
 class App {
   public server: Application;
@@ -16,7 +16,7 @@ class App {
   }
 
   routes() {
-    this.server.use(routes);
+    this.server.use(userRoutes);
   }
 }
 

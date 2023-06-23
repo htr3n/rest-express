@@ -1,1 +1,6 @@
 dist
+.yarn
+node_modules
+.husky
+LICENSE
+README.md

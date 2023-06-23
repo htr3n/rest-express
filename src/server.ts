@@ -1,7 +1,10 @@
+import 'dotenv/config';
+import './db/db-init';
 import app from './app';
+import logger from './utils/logging';
 
-const PORT = process.env.PORT ?? 8000;
+const PORT = parseInt(process.env.PORT as string) ?? 8000;
 
 app.listen(PORT, () => {
-  console.log(`Server Running here 👉 http://127.0.0.1:${PORT}`);
+  logger.info(`REST APIs running here 👉 http://127.0.0.1:${PORT}`);
 });
