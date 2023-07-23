@@ -1,5 +1,27 @@
 # REST API with [Express](https://expressjs.com) on [NodeJS](https://nodejs.org) and [TypeScript](https://www.typescriptlang.org) and [mongodb-memory-server](https://nodkz.github.io/mongodb-memory-server)
 
+## Getting Started
+
+### Install Dependencies
+
+```sh
+yarn install
+
+# or
+
+npm install
+```
+
+### Build
+
+```sh
+yarn build
+
+# or
+
+npm run build
+```
+
 ## REST API Usage
 
 ### Create a new user
@@ -29,3 +51,7 @@ curl -X PUT http://127.0.0.1:8000/users/123 \
 ```sh
 curl -X DELETE http://127.0.0.1:8000/users/123
 ```
+
+## License
+
+[MIT License](LICENSE)

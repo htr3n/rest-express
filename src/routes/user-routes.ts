@@ -69,7 +69,7 @@ userRoutes.post('/users', (req: Request, res: Response) => {
 
 // Update an existing user
 userRoutes.put('/users', (req: Request, res: Response) => {
-  const id = req.params.id as string;
+  const id = req.params.id;
   logger.info(
     `Receive a request to update user '${id}' with the content '${JSON.stringify(
       req.body
